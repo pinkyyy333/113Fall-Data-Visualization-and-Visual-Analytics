@@ -1,0 +1,11 @@
+h1 {
+    font-family: "Times New Roman", serif; /* 設置標題的字體為 Georgia */
+}
+
+p {
+    font-family: "SimSun", monospace; /* 設置段落的字體為 Courier New */
+}
+h6 {
+    font-family: "SimSun", serif; /* 設置標題的字體為 Georgia */
+}
+

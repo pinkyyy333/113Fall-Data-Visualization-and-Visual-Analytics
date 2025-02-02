@@ -1,0 +1,55 @@
+<!--http://ba2907c6c503f2df.vis.lab.djosix.com:2024/-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinky's hw5</title>
+    <link rel="stylesheet" href="111704035.css">
+</head>
+
+<body style="text-align: center;">
+    <style>
+        h1 {
+            font-family: "Times New Roman", serif; /* 設置標題的字體為 Georgia */
+        }
+    
+        p {
+            font-family: "SimSun", monospace; /* 設置段落的字體為 Courier New */
+        }
+    </style>
+    <h1>Homework 5 Stacked Bar Charts</h1>
+    <div style="font-size: medium; color: gray;">
+        <p>Name：蕭佳蘋</p>
+        <p>Student ID：111704035</p>
+    </div>
+
+    <!-- Sort by -->
+    <label for="sort-by">Sort by: </label>
+    <select name="sort-by" id="sort-by">
+        <option value="scores_overall" selected>overall</option>
+        <option value="scores_teaching">teaching</option>
+        <option value="scores_research">research</option>
+        <option value="scores_citations">citations</option>
+        <option value="scores_industry_income">industry income</option>
+        <option value="scores_international_outlook">international outlook</option>
+    </select>
+    <!-- Sort order -->
+    <label for="sort-order">Sort order: </label>
+    <select name="sort-order" id="sort-order">
+        <option value="descending" selected>descending</option>
+        <option value="ascending">ascending</option>
+    </select>
+    <button id="sort-button">Sort</button>
+
+    <!-- Create a div where the graph will take place -->
+    <div id="my_dataviz"></div>
+    
+    <hr>
+</body>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="111704035.js"></script>
+
+</html>
