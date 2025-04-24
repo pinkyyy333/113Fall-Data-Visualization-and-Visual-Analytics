@@ -1,0 +1,116 @@
+<!--網址：http://aa721fffd6e5ca51.vis.lab.djosix.com:2024/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinky's hw1</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        #my_dataviz {
+            margin-right: 50px;
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: flex-start;
+        }
+        fieldset {
+            text-align: left;
+            border: 3px dashed #ccc; 
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        fieldset div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        label {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <style>
+        h1 {
+            font-family: "Times New Roman", serif; /* 設置標題的字體為 Georgia */
+        }
+    
+        p {
+            font-family: "SimSun", monospace; /* 設置段落的字體為 Courier New */
+        }
+    </style>
+    <h1>Homework 1 iris_scatter</h1>
+    <div style="font-size: medium; color: gray;">
+        <p>Name：蕭佳蘋</p>
+        <p>Student ID：111704035</p>
+    </div>
+    <div style="text-align: center;">
+        <span style="margin-right: 15px;">flower classes: </span>
+        <span style="color: #FFACBB ; margin-right: 15px;">setosa </span>
+        <span style="color: #FFCC66 ; margin-right: 15px;">versicolor </span>
+        <span style="color: #66CCCC">virginica </span>
+    </div>
+    <br/>
+    <div class="container">
+
+        <div id="my_dataviz"></div>
+
+        <div class="controls">
+            <fieldset>
+                <legend>X axis</legend>
+                <div>
+                    <input type="radio" id="X_sepal_length" name="X_axis" value="sepal length" checked />
+                    <label for="X_sepal_length">sepal length</label>
+                </div>
+                <div>
+                    <input type="radio" id="X_sepal_width" name="X_axis" value="sepal width" />
+                    <label for="X_sepal_width">sepal width</label>
+                </div>
+                <div>
+                    <input type="radio" id="X_petal_length" name="X_axis" value="petal length" />
+                    <label for="X_petal_length">petal length</label>
+                </div>
+                <div>
+                    <input type="radio" id="X_petal_width" name="X_axis" value="petal width" />
+                    <label for="X_petal_width">petal width</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Y axis</legend>
+                <div>
+                    <input type="radio" id="Y_sepal_length" name="Y_axis" value="sepal length"/>
+                    <label for="Y_sepal_length">sepal length</label>
+                </div>
+                <div>
+                    <input type="radio" id="Y_sepal_width" name="Y_axis" value="sepal width" checked />
+                    <label for="Y_sepal_width">sepal width</label>
+                </div>
+                <div>
+                    <input type="radio" id="Y_petal_length" name="Y_axis" value="petal length" />
+                    <label for="Y_petal_length">petal length</label>
+                </div>
+                <div>
+                    <input type="radio" id="Y_petal_width" name="Y_axis" value="petal width" />
+                    <label for="Y_petal_width">petal width</label>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="./111704035.js"></script>
+    
+</body>
+</html>
